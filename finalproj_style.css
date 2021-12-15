@@ -1,0 +1,266 @@
+body {
+    background-image: url(Images/background_main.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0px;
+    padding: 0px;
+}
+.list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px;
+    align-items: center;
+    box-shadow: 0px 0px 10px;
+    border: 1px solid whitesmoke;
+    background-color: rgb(42, 196, 42);
+}
+.item_list {
+    margin-right: 2rem;
+    list-style: none;
+    float: right;
+}
+.item_list a:hover {
+    background-color:whitesmoke;
+    color: rgb(42, 196, 42);
+}
+.item_list a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 200ms ease-in;
+    font-size: 22px;
+}
+#active_item, a:hover {
+  padding: 1px;
+  border: 2px solid whitesmoke;
+  transition: 0.5s;
+}
+#Head_name {
+    margin-right: auto;
+    margin-left: 2rem;
+    color: whitesmoke;
+    font-size: 23px;
+    list-style: none;
+}
+@media only screen and (max-width: 700px) {
+.item_list {
+  font-size: 6px;
+  margin: 5px;
+  padding: 1px;
+  bottom: auto;
+  display: block;
+}
+#Head_name {
+  font-size: 14px;
+  
+}
+}
+@media (max-width: 600px) {
+nav .item_list {
+  font-size: 20px;
+}
+  
+}
+
+/* CSS for main_home.html  */
+#home_intro {
+    background-color: green;
+    border: ridge;
+    font-size: 25px;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+p {
+    margin: 10px;
+}
+* {box-sizing: border-box;}
+.Slides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow */
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  border: ridge;
+  border-color: whitesmoke;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+.active {
+  background-color: #717171;
+}
+/* Image to fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* CSS for finalproj_about.html */
+.about_head {
+    background-color: green;
+    font-style:oblique;
+    font-size: 25px;
+    border: solid;
+    border-radius: 10px;
+    margin: 15px;
+}
+.about_title {
+font-weight: bolder;
+}
+
+/* CSS for finalproj_dishes.html */
+#dish_head {
+color: rgb(42, 196, 42);
+background-color: whitesmoke;
+border: solid;
+border-color: rgb(42, 196, 42);
+}
+th {
+padding: 5px;
+font-size: 18px;
+font-weight: bold;
+}
+td {
+font-size: 16px;
+font-weight: bold ;
+}
+td, th {
+align-items: center;
+border: solid ;
+border-color: rgb(42, 196, 42);
+color: rgb(42, 196, 42);
+background-color: whitesmoke;
+}
+.table_dish {
+overflow-x:auto;
+padding: 5px;
+display: flex;
+margin: 10px;
+border: solid;
+border-color: rgb(42, 196, 42);
+}
+
+.Pictures {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Pictures:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* CSS for finalproj_feedback */
+#Survey {
+  border: 5px solid whitesmoke;
+  padding: 15px;
+  display: inline-flex;
+}
+legend {
+font-weight: bold;
+font-size: 40px;
+background-color: rgb(42, 196, 42);
+border: solid;
+border-radius: 30px;
+margin-right: 60%;
+padding: 5px;
+}
+label {
+font-size: 30px;
+font-weight: bold;
+color:whitesmoke;
+}
+input, textarea {
+background-color: rgb(42, 196, 42);
+color: white;
+font-size: 20px;
+border: white solid;
+}
+#click {
+font-size: 30px;
+cursor: pointer;
+border-radius: 20px;
+}

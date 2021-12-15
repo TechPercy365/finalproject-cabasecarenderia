@@ -1,0 +1,47 @@
+<!--
+    Name: Percimel Vargas
+    Course&Year: BSIT-1D
+    Date Created: December 11-14, 2021
+-->
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Final Project CARENDERIA</title>
+ <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="finalproj_style.css">
+ <script src="finalproj_script.js" defer></script>
+</head>
+<body>
+<nav>
+<ul class="list">
+    <li id="Head_name"><h1>CABASE'S CARENDERIA</h1></li>
+    <li class="item_list"><a href="index.html">Home</a></li>
+    <li class="item_list"><a href="finalproj_about.html">About</a></li>
+    <li class="item_list"><a href="finalproj_dishes.html">Dishes</a></li>
+    <li class="item_list" id="active_item"><a href="finalproj_feedback.html">Feedback</a></li>
+</ul>
+</nav>
+<div id="Survey">
+    <div>
+        <form id="form_survey" action="" method="POST" enctype="text/plain">
+        <legend>Customer's Feedback</legend>
+        <label for="CusLname">Last Name: </label> <br>
+        <input type="text" name="CusLname" id="CusLname" placeholder="Enter your Last name Here"> <br>
+        <label for="CusFname">First Name: </label> <br>
+        <input type="text" name="CusFname" id="CusFname" placeholder="Enter your First Name Here"> <br>
+        <label for="Qrate">Rate our Food Quality</label> <br>
+        <input type="range" name="Qrate" id="Qrate" step="1" min="1" max="10"> <br>
+        <label for="Srate">Rate our Service</label> <br>
+        <input type="range" name="Srate" id="Srate" step="1" min="1" max="10"> <br>
+        <label for="Orate">Your Overall Satisfaction</label> <br>
+        <input type="range" name="Orate" id="Orate" step="1" min="1" max="10"> <br>
+        <label for="opinion">What can you say about our Carenderia?</label> <br>
+        <textarea name="opinion" id="opinion" cols="50" rows="15" placeholder="Enter your thoughts and opinion here"></textarea> <br>
+        <input id="click" type="submit" onclick="display()" value="Submit" /> &nbsp; &nbsp;
+        </form>
+        </div>
+</div>
+
+
+</body>
+</html>
